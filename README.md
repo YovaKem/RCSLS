@@ -1,6 +1,6 @@
 ## RCSLS: PyTorch implementation
 
-RCSLS [[1](https://arxiv.org/abs/1804.07745)] is a method for cross-lingual word embedding alignment, ([originally implemented](https://github.com/facebookresearch/fastText/tree/master/alignment)) in NumPy. This is a PyTorch implementation of the algorithm, based on the [MUSE](https://github.com/facebookresearch/MUSE) codebase. 
+RCSLS [[1](https://arxiv.org/abs/1804.07745)] is a method for cross-lingual word embedding alignment, [originally implemented](https://github.com/facebookresearch/fastText/tree/master/alignment) in NumPy. This is a PyTorch implementation of the algorithm, based on the [MUSE](https://github.com/facebookresearch/MUSE) codebase. 
 
 ### Instructions from [MUSE](https://github.com/facebookresearch/MUSE):
 
@@ -76,9 +76,9 @@ The reported precision scores are for a fixed number of epochs (10) and with a n
 
 | Code                                                  | en-es | es-en | en-fr | fr-en | en-de | de-en | en-ru | ru-en | en-zh | zh-en |  avg  |
 | ----------------------------------------------------- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
-| Joulin et al. [[1](https://arxiv.org/abs/1804.07745)] | 84.1  | 86.3  | 83.3  | 84.1  | 79.1  | 76.3  | 57.9  | 67.2  | 45.9  | 46.4  | 71.1  |
-| This implementation (10 epochs)                       | 84.2  | 86.6  | 83.9  | 84.7  | 78.3  | 76.6  | 57.6  | 66.7  | 47.6  | 47.4  | 71.4  |
-| This implementation (unsup. model selection)          | 84.3  | 86.6  | 83.9  | 85.0  | 78.7  | 76.7  | 57.6  | 67.1  | 47.6  | 47.4  | 71.5  |
+| Joulin et al. [[1](https://arxiv.org/abs/1804.07745)] | 84.1  | 86.3  | 83.3  | 84.1  | **79.1**  | 76.3  | **57.9**  | **67.2**  | 45.9  | 46.4  | 71.1  |
+| This implementation (10 epochs)                       | 84.2  | **86.6**  | **83.9**  | 84.7  | 78.3  | 76.6  | 57.6  | 66.7  | **47.6**  | **47.4**  | 71.4  |
+| This implementation (unsup. model selection)          | **84.3**  | **86.6**  | **83.9**  | **85.0**  | 78.7  | **76.7**  | 57.6  | 67.1  | **47.6**  | **47.4**  | **71.5**  |
 
 
 ### References 
